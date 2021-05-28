@@ -59,13 +59,18 @@ const myWuNameIs = (firstName, lastName, birthMonth, birthDay) => {
           monthScore = 12;
           break;
     default:
-      console.log('That\'s not a month');
+      return 'That\'s not a month';
   }
 
   var wuFirstNameTotal = firstNameTotal + monthScore;
   var wuLastNameTotal = lastNameTotal + birthDay;
+  var wuFirstNameScore = wuFirstNameTotal.toString().slice(-2);
+  var wuLastNameScore = wuLastNameTotal.toString().slice(-2);
 
-  return `first name: ${firstNameTotal} wu name: ${wuFirstNameTotal} last name: ${lastNameTotal} wu name: ${wuLastNameTotal}`;
+
+
+
+  return `First Name: ${wuFirstNameScore + wuLastNameTotal}, Last Name: ${wuLastNameScore}.`;
 } ;
 
 console.log(myWuNameIs("Will", "Rhoda", 'July', 20));
