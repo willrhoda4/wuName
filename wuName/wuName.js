@@ -678,11 +678,11 @@ const myWuNameIs = (firstName, lastName, birthMonth, birthDay) => {
     default:
       return 'Ahh shit, looks like we ain\'t protect our necks, and now our code is broken!';
   }
-  return `${wuFirstName} ${wuLastName}`;
- // return `First Name: ${wuFirstNameScore + wuLastNameTotal}, Last Name: ${wuLastNameScore}.`;
+  return `From here on out you shall be referred to as the ${wuFirstName} ${wuLastName}.`;
+
 } ;
 
-console.log(myWuNameIs("Williama", "Rhoda", 'July', 20));
+console.log(myWuNameIs('Anthony', 'Munoz', 'July', 20));
 
 
 
