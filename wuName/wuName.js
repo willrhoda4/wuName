@@ -1,7 +1,7 @@
 
 
 const myWuNameIs = (firstName, lastName, birthMonth, birthDay) => {
-  var alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+  var alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"," ","-","è","é","ê","ë","ē","ė","ę","à","á","â","ä","æ","ã","å","ā","î","ï","í","ī","į","ì","ô","ö","ò","ó","œ","ø","ō","õ","û","ü","ù","ú","ū","ÿ","ç","ć","č","ł","ñ","ń","ß","ś","š","ž","ź","ż"];
 
   var smallFirstName = firstName.toLowerCase();
   var firstNameArr = smallFirstName.split('');
@@ -682,7 +682,7 @@ const myWuNameIs = (firstName, lastName, birthMonth, birthDay) => {
 
 } ;
 
-console.log(myWuNameIs('Anthony', 'Munoz', 'July', 20));
+console.log(myWuNameIs('JÉan-Paul', 'Munoz Çarminè', 'July', 20));
 
 
 
